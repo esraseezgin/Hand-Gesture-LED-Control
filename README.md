@@ -9,7 +9,7 @@ This project allows you to control 5 different LEDs using hand gestures. It uses
 - Python 3.x
 
 ## Circuit Diagram
-![Circuit](circuit_diagram.png)
+![Circuit]([circuit_diagram.png](https://github.com/esraseezgin/Hand-Gesture-LED-Control/blob/main/Hand%20gesture-led%20control/circuit_diagram.png))
 
 ## How to Run
 1. Connect your Arduino to `COM5` (or update the port in `main.py`).
