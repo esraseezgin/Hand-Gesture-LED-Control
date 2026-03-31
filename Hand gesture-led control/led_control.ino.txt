@@ -1,0 +1,22 @@
+int ledPins[] = {8, 9, 10, 11, 12};  // Thumb, Index, Middle, Ring, Pinky
+
+void setup() {
+  Serial.begin(9600);
+  for (int i = 0; i < 5; i++) {
+    pinMode(ledPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+  if (Serial.available() >= 5) {
+    for (int i = 0; i < 5; i++) {
+      int fingerState = Serial.read();
+      // Hem sayı (0-1) hem de karakter ('0'-'1') kontrolü yapıyoruz
+      if (fingerState == 1 || fingerState == '1') {
+        digitalWrite(ledPins[i], HIGH);
+      } else {
+        digitalWrite(ledPins[i], LOW);
+      }
+    }
+  }
+}
