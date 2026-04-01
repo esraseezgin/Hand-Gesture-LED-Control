@@ -9,9 +9,8 @@ This project allows you to control 5 different LEDs using hand gestures. It uses
 - Python 3.x
 
 ## How to Run
-- Connect your Arduino to COM5 (or update the port in main.py)
-- Upload led_control.ino to your Arduino
-- Install required libraries:
-  pip install -r requirements.txt
-- Run the project:
-  python main.py
+1. Connect your Arduino to `COM5` (or update the port in `main.py`).
+2. Upload `led_control.ino` to your Arduino.
+3. Install required libraries:
+   ```bash
+   pip install -r requirements.txt
